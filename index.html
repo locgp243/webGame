@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Quizz-Game</title>
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/fontawesome.pro.6.0.0.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap");
+        </style>
+    </head>
+    <body>
+        <section class="wrapper">
+            <div class="bg">
+                <img src="assets/img/backgound2.jpg" />
+            </div>
+
+            <div class="user">
+                <div class="btn-login">
+                    <div id="login-btn">
+                        <a class="login-btn" href="#">Login</a>
+                    </div>
+
+                    <div id="signUp-btn">
+                        <a class="signUp-btn" href="#">Sign Up</a>
+                    </div>
+                </div>
+
+                <!-- <section class="form-login">
+                    <div class="close">
+                        <i class="fa-solid fa-xmark close"></i>
+                    </div>
+                    <div class="form-box login">
+                        <h2>Đăng Nhập</h2>
+                        <form action="#" method="post">
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <input class="yourName" type="text" required />
+                                <label>Tên Của Bạn: </label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <input type="text" required />
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <input type="password" required />
+                                <label>Password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label
+                                    ><input
+                                        type="checkbox"
+                                        name="name"
+                                        value=""
+                                    />Lưu mật khẩu</label
+                                >
+                                <a href="#">Quên mật khẩu?</a>
+                                <input
+                                    id="dangNhap"
+                                    class="btn"
+                                    type="button"
+                                    name="name"
+                                    value="Đăng Nhập"
+                                />
+                            </div>
+                            <div class="register">
+                                <label>Bạn chưa có tài khoản?</label>
+                                <a class="register-link" href="#">Đăng Kí</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-box register">
+                        <h2>Đăng Kí</h2>
+                        <form action="#" method="post">
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </span>
+                                <input type="text" required />
+                                <label>Username</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <input type="text" required />
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <input type="password" required />
+                                <label>Password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label
+                                    ><input
+                                        type="checkbox"
+                                        name="name"
+                                        value=""
+                                    />Tôi đồng ý với các<br />
+                                    Điều khoản & Điều kiện</label
+                                >
+                                <input
+                                    class="btn"
+                                    type="button"
+                                    name="name"
+                                    value="Đăng Kí"
+                                />
+                            </div>
+                            <div class="register">
+                                <label>Bạn đã có tài khoản?</label>
+                                <a class="login-link" href="#">Đăng Nhập</a>
+                            </div>
+                        </form>
+                    </div>
+                </section> -->
+
+            </div>
+
+            <div class="content">
+                <h2 class="game-title">Experiencing College Life</h2>
+                <svg>
+                    <filter id="title">
+                        <feTurbulence
+                            id="turbulence"
+                            baseFrequency="0.1 0.1"
+                            numOctaves="2"
+                            seed="3"
+                        >
+                            <animate
+                                attributeName="baseFrequency"
+                                dur="10s"
+                                values="0.1 0.1; 0.12 0.2"
+                                repeatCount="indefinite"
+                            ></animate>
+                        </feTurbulence>
+                        <feDisplacementMap
+                            in="SourceGraphic"
+                            scale="5"
+                        ></feDisplacementMap>
+                    </filter>
+                </svg>
+            </div>
+
+            <div id="play-btn">
+                <a href="./game/playGame.html">Trượt Xuống Để Trải Nghiệm</a>
+            </div>
+
+            <!-- <div id="avartar" class="avt">
+
+                <div class="character">
+                    <img src="assets/img/avatar-1.png" />
+                    <ul class="items">
+                        <li>
+                            <a title="Trang Chủ" href="#">
+                                <i class="fa-solid fa-house-heart"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="hướng dẫn" href="#">
+                                <i class="fa-solid fa-question"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="cốt truyện" href="#instruction">
+                                <i class="fa-solid fa-treasure-chest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+        </section>
+
+        <section class="script-game" id="script-game">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+            
+        </section>
+
+    
+
+        <section>
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <script src="assets/js/bootstrap.bundle.js"></script>
+            <script src="assets/js/jquery.js"></script>
+            <script src="assets/js/script.js"></script>
+        </section>
+    </body>
+</html>
